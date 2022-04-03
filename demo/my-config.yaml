@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata:
+  name: configmap-demo 
+  namespace: mumu
+data:
+  abc: "123" 
+  cde: "456"
+  
+  redis.properties: | 
+    port: 6379
+    host: 192.168.1.23
+

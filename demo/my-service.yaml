@@ -6,6 +6,7 @@ metadata:
   name: my-service
   namespace: mumu
 spec:
+  type: ClusterIP  # 默认类型
   ports:
   - port: 80
     name: http

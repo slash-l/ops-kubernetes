@@ -6,10 +6,10 @@ metadata:
   name: my-service
   namespace: mumu
 spec:
-  type: ClusterIP  # 默认类型
-  ports:
-  - port: 80
-    name: http
-    targetPort: 80
   selector:
     app: nginx
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+

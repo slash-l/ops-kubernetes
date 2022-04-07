@@ -17,7 +17,7 @@ metadata:
   namespace: default
 subjects:
 - kind: User
-  name: aliang
+  name: slash
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role

@@ -20,9 +20,9 @@ cat > ca-config.json <<EOF
 }
 EOF
 
-cat > aliang-csr.json <<EOF
+cat > slash-csr.json <<EOF
 {
-  "CN": "aliang",
+  "CN": "slash",
   "hosts": [],
   "key": {
     "algo": "rsa",
@@ -40,4 +40,4 @@ cat > aliang-csr.json <<EOF
 }
 EOF
 
-cfssl gencert -ca=/etc/kubernetes/pki/ca.crt -ca-key=/etc/kubernetes/pki/ca.key -config=ca-config.json -profile=kubernetes aliang-csr.json | cfssljson -bare aliang
+cfssl gencert -ca=/etc/kubernetes/pki/ca.crt -ca-key=/etc/kubernetes/pki/ca.key -config=ca-config.json -profile=kubernetes slash-csr.json | cfssljson -bare slash

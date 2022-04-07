@@ -18,11 +18,11 @@ spec:
       containers:
       - image: nginx:1.19
         name: slash-nginx
-        volumeMounts:
-        - mountPath: "/usr/share/nginx/html"
-          name: nginx-data
-      volumes:
-      - name: nginx-data
-        persistentVolumeClaim:
-          claimName: myclaim
+#        volumeMounts:
+#        - mountPath: "/usr/share/nginx/html"
+#          name: nginx-data
+#      volumes:
+#      - name: nginx-data
+#        persistentVolumeClaim:
+#          claimName: myclaim
 
